@@ -1,0 +1,20 @@
+<div class="container text-center w-80">
+    <h2>Please login with your email and password</h2>
+    <div class="container w-50">
+        <form action="validate" method="post">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="text" id="email" name="email" placeholder="name@mail.com" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" id="password" name="password" class="form-control" required >
+            </div>
+            <button type="submit" class="btn btn-primary mb-3 w-100">Login</button>
+            {{#if error}}
+                <p class="error">{{message}}</p>
+            {{/if}}
+        </form>
+    </div>
+    
+</div>
